@@ -1,0 +1,1261 @@
+2020-05-15 10:47:24,008 [1] INFO  - Loaded appender: FileAppenderExternal
+2020-05-15 10:47:24,027 [1] INFO  - Loaded appender: UserLoggerAppender
+2020-05-15 10:47:24,027 [1] INFO  - Loaded appender: FileAppenderInternal
+2020-05-15 10:47:24,028 [1] INFO  - Loaded appender: FileAppenderExternal
+2020-05-15 10:47:24,028 [1] INFO  - Loaded appender: UserLoggerAppender
+2020-05-15 10:47:24,028 [1] INFO  - Loaded appender: FileAppenderInternal
+2020-05-15 10:47:24,576 [21] INFO  - Step 'Start' : Step 'Start' started
+2020-05-15 10:47:24,605 [21] INFO  - Step 'Start' ended successfully
+2020-05-15 10:47:24,607 [21] INFO  - Step 'Test Flow' : Step 'Test Flow' started
+2020-05-15 10:47:24,662 [21] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2020-05-15 10:47:24,663 [21] INFO  - Step 'GetFlightOrders' : Step 'GetFlightOrders' started
+2020-05-15 10:47:24,680 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <GetFlightOrders xmlns="HP.SOAQ.SampleApp">
+      <FlightsDetails>
+        <CustomerName>a</CustomerName>
+      </FlightsDetails>
+    </GetFlightOrders>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,692 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,721 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,724 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightOrdersResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightOrdersResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Mary Parker</CustomerName>
+          <DepartureDate>2014-07-13T07:59:00</DepartureDate>
+          <FlightNumber>4194</FlightNumber>
+          <NumberOfTickets>5</NumberOfTickets>
+          <OrderNumber>3</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Business</Class>
+          <CustomerName>Jon Baker</CustomerName>
+          <DepartureDate>2014-07-14T07:59:00</DepartureDate>
+          <FlightNumber>4219</FlightNumber>
+          <NumberOfTickets>4</NumberOfTickets>
+          <OrderNumber>4</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Jack Barnes</CustomerName>
+          <DepartureDate>2014-07-19T19:59:00</DepartureDate>
+          <FlightNumber>6232</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>9</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Jane Hansen</CustomerName>
+          <DepartureDate>2014-07-20T19:59:00</DepartureDate>
+          <FlightNumber>4214</FlightNumber>
+          <NumberOfTickets>2</NumberOfTickets>
+          <OrderNumber>10</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-04-04T08:00:00</DepartureDate>
+          <FlightNumber>11550</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>90</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-04-04T08:00:00</DepartureDate>
+          <FlightNumber>11550</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>91</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-04-04T08:00:00</DepartureDate>
+          <FlightNumber>11550</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>92</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>93</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>94</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>95</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>96</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>97</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>99</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Ann Frank</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>3</NumberOfTickets>
+          <OrderNumber>101</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Business</Class>
+          <CustomerName>John Parker</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>102</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-07-16T08:00:00</DepartureDate>
+          <FlightNumber>17104</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>106</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>107</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>108</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>109</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>110</OrderNumber>
+        </FlightOrder>
+      </GetFlightOrdersResult>
+    </GetFlightOrdersResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,751 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,757 [21] INFO  - Step 'GetFlightOrders' ended successfully
+2020-05-15 10:47:24,758 [21] INFO  - Step 'Loop6' : Step 'Loop6' started
+2020-05-15 10:47:24,760 [21] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2020-05-15 10:47:24,761 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,763 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,764 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,772 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,773 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>true</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,777 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,778 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,780 [21] INFO  - Step 'Iteration 1' ended successfully
+2020-05-15 10:47:24,780 [21] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2020-05-15 10:47:24,781 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,784 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,786 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,789 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,790 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,794 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,795 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,796 [21] INFO  - Step 'Iteration 2' ended successfully
+2020-05-15 10:47:24,797 [21] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2020-05-15 10:47:24,798 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,800 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,802 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,806 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,807 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,815 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,817 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,818 [21] INFO  - Step 'Iteration 3' ended successfully
+2020-05-15 10:47:24,819 [21] INFO  - Step 'Iteration 4' : Step 'Iteration 4' started
+2020-05-15 10:47:24,820 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,822 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,824 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,828 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,829 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,832 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,834 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,835 [21] INFO  - Step 'Iteration 4' ended successfully
+2020-05-15 10:47:24,836 [21] INFO  - Step 'Iteration 5' : Step 'Iteration 5' started
+2020-05-15 10:47:24,837 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,839 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,841 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,844 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,845 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,849 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,851 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,852 [21] INFO  - Step 'Iteration 5' ended successfully
+2020-05-15 10:47:24,852 [21] INFO  - Step 'Iteration 6' : Step 'Iteration 6' started
+2020-05-15 10:47:24,853 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,855 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,857 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,861 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,862 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,865 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,867 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,868 [21] INFO  - Step 'Iteration 6' ended successfully
+2020-05-15 10:47:24,869 [21] INFO  - Step 'Iteration 7' : Step 'Iteration 7' started
+2020-05-15 10:47:24,870 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,872 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,874 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,877 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,878 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,882 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,883 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,885 [21] INFO  - Step 'Iteration 7' ended successfully
+2020-05-15 10:47:24,885 [21] INFO  - Step 'Iteration 8' : Step 'Iteration 8' started
+2020-05-15 10:47:24,887 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,889 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,891 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,894 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,895 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,899 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,901 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,902 [21] INFO  - Step 'Iteration 8' ended successfully
+2020-05-15 10:47:24,910 [21] INFO  - Step 'Iteration 9' : Step 'Iteration 9' started
+2020-05-15 10:47:24,911 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,914 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,916 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,920 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,921 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,925 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,926 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,928 [21] INFO  - Step 'Iteration 9' ended successfully
+2020-05-15 10:47:24,928 [21] INFO  - Step 'Iteration 10' : Step 'Iteration 10' started
+2020-05-15 10:47:24,929 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,931 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,933 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,937 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,937 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,942 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,943 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,944 [21] INFO  - Step 'Iteration 10' ended successfully
+2020-05-15 10:47:24,945 [21] INFO  - Step 'Iteration 11' : Step 'Iteration 11' started
+2020-05-15 10:47:24,946 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,948 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,950 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,953 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,954 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,958 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,959 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,960 [21] INFO  - Step 'Iteration 11' ended successfully
+2020-05-15 10:47:24,961 [21] INFO  - Step 'Iteration 12' : Step 'Iteration 12' started
+2020-05-15 10:47:24,962 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,964 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,966 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,970 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,971 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,975 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,976 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,979 [21] INFO  - Step 'Iteration 12' ended successfully
+2020-05-15 10:47:24,980 [21] INFO  - Step 'Iteration 13' : Step 'Iteration 13' started
+2020-05-15 10:47:24,981 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,983 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:24,985 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:24,988 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:24,989 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:24,993 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:24,995 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:24,996 [21] INFO  - Step 'Iteration 13' ended successfully
+2020-05-15 10:47:24,996 [21] INFO  - Step 'Iteration 14' : Step 'Iteration 14' started
+2020-05-15 10:47:24,997 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:24,999 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,001 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,005 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,006 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,009 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,011 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,012 [21] INFO  - Step 'Iteration 14' ended successfully
+2020-05-15 10:47:25,013 [21] INFO  - Step 'Iteration 15' : Step 'Iteration 15' started
+2020-05-15 10:47:25,014 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,016 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,018 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,022 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,023 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,027 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,029 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,030 [21] INFO  - Step 'Iteration 15' ended successfully
+2020-05-15 10:47:25,031 [21] INFO  - Step 'Iteration 16' : Step 'Iteration 16' started
+2020-05-15 10:47:25,032 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,034 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,036 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,040 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,041 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,045 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,047 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,049 [21] INFO  - Step 'Iteration 16' ended successfully
+2020-05-15 10:47:25,049 [21] INFO  - Step 'Iteration 17' : Step 'Iteration 17' started
+2020-05-15 10:47:25,050 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,052 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,054 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,058 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,058 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,063 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,064 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,065 [21] INFO  - Step 'Iteration 17' ended successfully
+2020-05-15 10:47:25,066 [21] INFO  - Step 'Iteration 18' : Step 'Iteration 18' started
+2020-05-15 10:47:25,067 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,069 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,071 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,074 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,075 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,078 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,079 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,080 [21] INFO  - Step 'Iteration 18' ended successfully
+2020-05-15 10:47:25,081 [21] INFO  - Step 'Iteration 19' : Step 'Iteration 19' started
+2020-05-15 10:47:25,082 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,085 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,086 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,090 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,091 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,095 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,096 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,097 [21] INFO  - Step 'Iteration 19' ended successfully
+2020-05-15 10:47:25,098 [21] INFO  - Step 'Iteration 20' : Step 'Iteration 20' started
+2020-05-15 10:47:25,100 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,103 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>3</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,105 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,109 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,110 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,116 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,117 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,119 [21] INFO  - Step 'Iteration 20' ended successfully
+2020-05-15 10:47:25,120 [21] INFO  - Step 'Loop6' ended successfully
+2020-05-15 10:47:25,121 [21] INFO  - Step 'Iteration 1' ended successfully
+2020-05-15 10:47:25,123 [21] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2020-05-15 10:47:25,124 [21] INFO  - Step 'GetFlightOrders' : Step 'GetFlightOrders' started
+2020-05-15 10:47:25,125 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <GetFlightOrders xmlns="HP.SOAQ.SampleApp">
+      <FlightsDetails>
+        <CustomerName>b</CustomerName>
+      </FlightsDetails>
+    </GetFlightOrders>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,127 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,129 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,130 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightOrdersResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightOrdersResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <FlightOrder>
+          <Class>Business</Class>
+          <CustomerName>Jon Baker</CustomerName>
+          <DepartureDate>2014-07-14T07:59:00</DepartureDate>
+          <FlightNumber>4219</FlightNumber>
+          <NumberOfTickets>4</NumberOfTickets>
+          <OrderNumber>4</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Jack Barnes</CustomerName>
+          <DepartureDate>2014-07-19T19:59:00</DepartureDate>
+          <FlightNumber>6232</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>9</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-07-16T08:00:00</DepartureDate>
+          <FlightNumber>17104</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>106</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>107</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>108</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>109</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Bruce Wayne</CustomerName>
+          <DepartureDate>2020-08-08T08:00:00</DepartureDate>
+          <FlightNumber>17136</FlightNumber>
+          <NumberOfTickets>6</NumberOfTickets>
+          <OrderNumber>110</OrderNumber>
+        </FlightOrder>
+      </GetFlightOrdersResult>
+    </GetFlightOrdersResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,135 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,136 [21] INFO  - Step 'GetFlightOrders' ended successfully
+2020-05-15 10:47:25,137 [21] INFO  - Step 'Loop6' : Step 'Loop6' started
+2020-05-15 10:47:25,138 [21] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2020-05-15 10:47:25,140 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,141 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,143 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,152 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,153 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>true</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,157 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,159 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,160 [21] INFO  - Step 'Iteration 1' ended successfully
+2020-05-15 10:47:25,161 [21] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2020-05-15 10:47:25,162 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,164 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,166 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,170 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,171 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,175 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,176 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,178 [21] INFO  - Step 'Iteration 2' ended successfully
+2020-05-15 10:47:25,178 [21] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2020-05-15 10:47:25,179 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,181 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,183 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,187 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,188 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,191 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,193 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,200 [21] INFO  - Step 'Iteration 3' ended successfully
+2020-05-15 10:47:25,201 [21] INFO  - Step 'Iteration 4' : Step 'Iteration 4' started
+2020-05-15 10:47:25,202 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,204 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,206 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,210 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,211 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,215 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,216 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,217 [21] INFO  - Step 'Iteration 4' ended successfully
+2020-05-15 10:47:25,217 [21] INFO  - Step 'Iteration 5' : Step 'Iteration 5' started
+2020-05-15 10:47:25,218 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,220 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,222 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,225 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,226 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,230 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,231 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,232 [21] INFO  - Step 'Iteration 5' ended successfully
+2020-05-15 10:47:25,233 [21] INFO  - Step 'Iteration 6' : Step 'Iteration 6' started
+2020-05-15 10:47:25,234 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,236 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,237 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,241 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,242 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,246 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,247 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,248 [21] INFO  - Step 'Iteration 6' ended successfully
+2020-05-15 10:47:25,249 [21] INFO  - Step 'Iteration 7' : Step 'Iteration 7' started
+2020-05-15 10:47:25,250 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,251 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>4</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,253 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,257 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,258 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,262 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,263 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,264 [21] INFO  - Step 'Iteration 7' ended successfully
+2020-05-15 10:47:25,265 [21] INFO  - Step 'Loop6' ended successfully
+2020-05-15 10:47:25,266 [21] INFO  - Step 'Iteration 2' ended successfully
+2020-05-15 10:47:25,268 [21] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2020-05-15 10:47:25,269 [21] INFO  - Step 'GetFlightOrders' : Step 'GetFlightOrders' started
+2020-05-15 10:47:25,270 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+  <Body>
+    <GetFlightOrders xmlns="HP.SOAQ.SampleApp">
+      <FlightsDetails>
+        <CustomerName>j</CustomerName>
+      </FlightsDetails>
+    </GetFlightOrders>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,272 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,274 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,275 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <GetFlightOrdersResponse xmlns="HP.SOAQ.SampleApp">
+      <GetFlightOrdersResult xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+        <FlightOrder>
+          <Class>Business</Class>
+          <CustomerName>Joe Shmoe</CustomerName>
+          <DepartureDate>2014-07-16T19:59:00</DepartureDate>
+          <FlightNumber>4210</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>6</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>First</Class>
+          <CustomerName>Jack Barnes</CustomerName>
+          <DepartureDate>2014-07-19T19:59:00</DepartureDate>
+          <FlightNumber>6232</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>9</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Economy</Class>
+          <CustomerName>Jane Hansen</CustomerName>
+          <DepartureDate>2014-07-20T19:59:00</DepartureDate>
+          <FlightNumber>4214</FlightNumber>
+          <NumberOfTickets>2</NumberOfTickets>
+          <OrderNumber>10</OrderNumber>
+        </FlightOrder>
+        <FlightOrder>
+          <Class>Business</Class>
+          <CustomerName>John Parker</CustomerName>
+          <DepartureDate>2020-05-05T07:12:00</DepartureDate>
+          <FlightNumber>20210</FlightNumber>
+          <NumberOfTickets>1</NumberOfTickets>
+          <OrderNumber>102</OrderNumber>
+        </FlightOrder>
+      </GetFlightOrdersResult>
+    </GetFlightOrdersResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,280 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,282 [21] INFO  - Step 'GetFlightOrders' ended successfully
+2020-05-15 10:47:25,283 [21] INFO  - Step 'Loop6' : Step 'Loop6' started
+2020-05-15 10:47:25,285 [21] INFO  - Step 'Iteration 1' : Step 'Iteration 1' started
+2020-05-15 10:47:25,286 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,288 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>6</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,290 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,297 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,298 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>true</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,302 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,303 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,305 [21] INFO  - Step 'Iteration 1' ended successfully
+2020-05-15 10:47:25,305 [21] INFO  - Step 'Iteration 2' : Step 'Iteration 2' started
+2020-05-15 10:47:25,306 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,308 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>6</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,310 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,313 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,314 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,318 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,319 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,320 [21] INFO  - Step 'Iteration 2' ended successfully
+2020-05-15 10:47:25,321 [21] INFO  - Step 'Iteration 3' : Step 'Iteration 3' started
+2020-05-15 10:47:25,322 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,324 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>6</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,326 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,330 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,331 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,335 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,337 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,338 [21] INFO  - Step 'Iteration 3' ended successfully
+2020-05-15 10:47:25,338 [21] INFO  - Step 'Iteration 4' : Step 'Iteration 4' started
+2020-05-15 10:47:25,339 [21] INFO  - Step 'DeleteFlightOrder' : Step 'DeleteFlightOrder' started
+2020-05-15 10:47:25,341 [21] INFO  - 
+Request:
+
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+  <Body>
+    <DeleteFlightOrder xmlns="HP.SOAQ.SampleApp">
+      <OrderNumber>6</OrderNumber>
+    </DeleteFlightOrder>
+  </Body>
+</Envelope>
+
+2020-05-15 10:47:25,343 [21] INFO  - URL: http://localhost:8000/Flights_SOAP
+2020-05-15 10:47:25,347 [21] INFO  - Returning the response to the previous channel
+2020-05-15 10:47:25,348 [21] INFO  - 
+Response:
+
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Body>
+    <DeleteFlightOrderResponse xmlns="HP.SOAQ.SampleApp">
+      <DeleteFlightOrderResult>false</DeleteFlightOrderResult>
+    </DeleteFlightOrderResponse>
+  </s:Body>
+</s:Envelope>
+
+2020-05-15 10:47:25,352 [21] INFO  - Structural Validation: True
+2020-05-15 10:47:25,354 [21] INFO  - Step 'DeleteFlightOrder' ended successfully
+2020-05-15 10:47:25,355 [21] INFO  - Step 'Iteration 4' ended successfully
+2020-05-15 10:47:25,357 [21] INFO  - Step 'Loop6' ended successfully
+2020-05-15 10:47:25,358 [21] INFO  - Step 'Iteration 3' ended successfully
+2020-05-15 10:47:25,359 [21] INFO  - Step 'Test Flow' ended successfully
+2020-05-15 10:47:25,500 [21] INFO  - Step 'End' : Step 'End' started
+2020-05-15 10:47:25,508 [21] INFO  - Step 'End' ended successfully
