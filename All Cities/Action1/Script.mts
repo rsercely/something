@@ -6,7 +6,7 @@ toCityDesc("devnamepath").value= "toCity"
 fromCitiesItems = WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").GetROProperty("all items")
 fromCities = split(fromCitiesItems,vblf)
 
-For fromCityIndex = 0 To ubound(fromCities)-1
+For fromCityIndex = 7 To ubound(fromCities)-1
 	WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("fromCity").select fromCityIndex
 	toCitiesItems = WpfWindow("Micro Focus MyFlight Sample").WpfComboBox("toCity").GetROProperty("all items")
 	toCities = split(toCitiesItems,vblf)
@@ -20,16 +20,19 @@ For fromCityIndex = 0 To ubound(fromCities)-1
 				'reporter.ReportEvent micFail, "checkCities", "Flying from " &FromCity& " to " ToCity
 				fromCityDesc("name").value= "From: " & fromCities(fromCityIndex)
 				If not WpfWindow("Micro Focus MyFlight Sample").WpfObject(fromCityDesc).Exist (10) then
-					wrongFromCity = WpfWindow("Micro Focus MyFlight Sample").WpfObject("To city").GetROProperty("name")
-					print  "from city is wrong. Found" & wrongFromCity
+					wrongFromCity = WpfWindow("Micro Focus MyFlight Sample").WpfObject("From city").GetROProperty("name")
+					print  "from city is wrong. Found " & wrongFromCity
+					reporter.ReportEvent micFail, "checkCities", "from city is wrong. Found " & wrongFromCity _
+						& vblf & "with To city of " & toCities(toCityIndex)
 				End If
-				WpfWindow("Micro Focus MyFlight Sample").WpfObject("From c5ty").Click
-
-
+				
 				toCityDesc("name").value= "To: " & toCities(toCityIndex)
 				If not WpfWindow("Micro Focus MyFlight Sample").WpfObject(toCityDesc).Exist (10) then
-					wrongToCity = toCityDesc("name").value= "To: " & toCities(toCityIndex).GetROProperty("name")
-					print  "to city is wrong. Found" & wrongToCity
+					wrongToCity = pfWindow("Micro Focus MyFlight Sample").WpfObject("To city").GetROProperty("name")
+					print  "to city is wrong. Found " & wrongToCity
+					reporter.ReportEvent micFail, "checkCities", "to city is wrong. Found " & wrongToCity _
+						& VBLF & "with From city of " & fromCities(fromCityIndex) 
+					
 				End If
 				
 				WpfWindow("Micro Focus MyFlight Sample").WpfButton("BACK").Click
