@@ -46,7 +46,7 @@ For toCityIndex = 0 To ubound(toCities)
 					WpfWindow("Micro Focus MyFlight Sample").WpfTable("flightsDataGrid").SelectCell 0,0 @@ hightlight id_;_1898179160_;_script infofile_;_ZIP::ssf13.xml_;_
 					WpfWindow("Micro Focus MyFlight Sample").WpfButton("SELECT FLIGHT").Click @@ hightlight id_;_1895038128_;_script infofile_;_ZIP::ssf14.xml_;_
 					WpfWindow("Micro Focus MyFlight Sample").WpfEdit("passengerName").Set DataTable("passengerName", dtGlobalSheet) @@ hightlight id_;_1898238488_;_script infofile_;_ZIP::ssf16.xml_;_
-DataTable.SetNextRow
+					DataTable.SetNextRow
 					WpfWindow("Micro Focus MyFlight Sample").WpfButton("ORDER").Click @@ hightlight id_;_2088944272_;_script infofile_;_ZIP::ssf19.xml_;_
 					if WpfWindow("Micro Focus MyFlight Sample").WpfObject("Order completed").Exist(20) then @@ hightlight id_;_1889093752_;_script infofile_;_ZIP::ssf18.xml_;_
 					end if
