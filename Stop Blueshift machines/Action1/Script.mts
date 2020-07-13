@@ -3,16 +3,22 @@
 ' My assumption is that if client is running, the order may be in use, so don't stop server or windows
 
 ' note that the "page link" is parameterized.
+' also note - the first iteration, the number "1" is not a link, it is an element
 
-if not Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Exist(10) then
-	Exittest ' this code assumes that there are enough orders that there are multiple pages. Comment this line out if there are not
+iteration = Environment.Value("ActionIteration")
+If iteration <> 1 Then
+	if not Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Exist(10) then
+		Exittest ' this code assumes that there are enough orders that there are multiple pages. Comment this line out if there are not
+	End If
+	Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click ' also comment out this if not multiple pages
 End If
 
-Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click ' also comment out this if not multiple pages
-
 nrows = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title").RowCount
-
 For row = 2 To nrows Step 1
+	Set titleLink = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title"). _
+		ChildItem(row, 2, "Link", 0)
+	BSSessionName = titleLink.getRoProperty("innertext")
+	print BSSessionName
 	Set orderLink = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title"). _
 		ChildItem(row, 3, "Link", 0)
 	orderLink.highlight
@@ -31,6 +37,10 @@ For row = 2 To nrows Step 1
 		If runningRow = 2 Then ' client is running, so don't stop anything
 			Exit for
 		End If
+		
+		if xxx = 1 then
+			print BSSessionName & " is being stopped"
+		end if 
 		Set running = Browser("Order information | Blueshift").Page("Order information | Blueshift").WebTable("Instance"). _
 			ChildItem(runningRow,4,"WebList",0)
 		running.highlight
