@@ -1,15 +1,14 @@
 ﻿' this test assumes that you are logged in, have selected the the order name to filter
 ' it stops all machines, but only if Client is not running.
-' My assumption is that if client is running, the order may be in use
+' My assumption is that if client is running, the order may be in use, so don't stop server or windows
 
-' note that the "page link" is parameterized. But - test is set to only run one iteration.
-' the last line advances to next row
+' note that the "page link" is parameterized.
 
-if not Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Exist(30) then
-	Exittest
+if not Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Exist(10) then
+	Exittest ' this code assumes that there are enough orders that there are multiple pages. Comment this line out if there are not
 End If
 
-Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click
+Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click ' also comment out this if not multiple pages
 
 nrows = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title").RowCount
 
@@ -29,6 +28,9 @@ For row = 2 To nrows Step 1
 		If runningRow = -1 Then
 			Exit for
 		End If
+		If runningRow = 2 Then ' client is running, so don't stop anything
+			Exit for
+		End If
 		Set running = Browser("Order information | Blueshift").Page("Order information | Blueshift").WebTable("Instance"). _
 			ChildItem(runningRow,4,"WebList",0)
 		running.highlight
@@ -45,6 +47,5 @@ For row = 2 To nrows Step 1
 	Browser("Order information | Blueshift").Close
 Next
 
+foo = 1 ' to set a breakpoint if desired @@ hightlight id_;_Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("2")_;_script infofile_;_ZIP::ssf6.xml_;_
 
-DataTable.SetNextRow
-'Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("2").Click @@ hightlight id_;_Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("2")_;_script infofile_;_ZIP::ssf6.xml_;_
