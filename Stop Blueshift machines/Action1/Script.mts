@@ -4,13 +4,16 @@
 
 ' note that the "page link" is parameterized.
 ' also note - the first iteration, the number "1" is not a link, it is an element
+' and - if a restrictive filter has been used, there may be no page link at all
 
-iteration = Environment.Value("ActionIteration")
+'Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebElement("Page 1").Click
+
+iteration = Environment.Value("TestIteration")
 If iteration <> 1 Then
 	if not Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Exist(10) then
-		Exittest ' this code assumes that there are enough orders that there are multiple pages. Comment this line out if there are not
+		Exittest ' this code assumes that there are enough orders that there are multiple pages. 
 	End If
-	Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click ' also comment out this if not multiple pages
+	Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click 
 End If
 
 nrows = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title").RowCount
@@ -24,8 +27,10 @@ For row = 2 To nrows Step 1
 	orderLink.highlight
 	href = orderLink.GetROProperty("href") ' simple click operation doesn't work :-(
 	Browser("My Orders | Blueshift").OpenNewTab
-	Browser("Google").Page("Google").Sync @@ hightlight id_;_Browser("Google").Page("Google")_;_script infofile_;_ZIP::ssf9.xml_;_
-	Browser("Google").Navigate href @@ hightlight id_;_394906_;_script infofile_;_ZIP::ssf10.xml_;_
+	Setting("DefaultTimeout") = 1*1000 
+	Browser("New Tab").Page("Google").Sync @@ hightlight id_;_Browser("Google").Page("Google")_;_script infofile_;_ZIP::ssf9.xml_;_
+	Setting("DefaultTimeout") = 20*1000 
+	Browser("New Tab").Navigate href @@ hightlight id_;_394906_;_script infofile_;_ZIP::ssf10.xml_;_
 
 
 	For xxx = 1 To 10 Step 1 ' but max of 4 or 5 should  be plenty
