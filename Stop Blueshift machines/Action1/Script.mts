@@ -15,7 +15,7 @@ If iteration <> 1 Then
 	End If
 	Browser("My Orders | Blueshift").Page("My Orders | Blueshift").Link("page link").Click 
 End If
-
+wait 20
 nrows = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title").RowCount
 For row = 2 To nrows Step 1
 	Set titleLink = Browser("My Orders | Blueshift").Page("My Orders | Blueshift").WebTable("Title"). _
@@ -27,10 +27,12 @@ For row = 2 To nrows Step 1
 	orderLink.highlight
 	href = orderLink.GetROProperty("href") ' simple click operation doesn't work :-(
 	Browser("My Orders | Blueshift").OpenNewTab
-	Setting("DefaultTimeout") = 1*1000 
-	Browser("New Tab").Page("Google").Sync @@ hightlight id_;_Browser("Google").Page("Google")_;_script infofile_;_ZIP::ssf9.xml_;_
-	Setting("DefaultTimeout") = 20*1000 
-	Browser("New Tab").Navigate href @@ hightlight id_;_394906_;_script infofile_;_ZIP::ssf10.xml_;_
+'	Setting("DefaultTimeout") = 1*1000 
+'	Browser("New Tab").Page("New Tab").Sync @@ hightlight id_;_Browser("Google").Page("Google")_;_script infofile_;_ZIP::ssf9.xml_;_
+'	Setting("DefaultTimeout") = 20*1000 
+'	Browser("New Tab").Navigate href @@ hightlight id_;_394906_;_script infofile_;_ZIP::ssf10.xml_;_
+
+	Browser("Order information | Blueshift").Navigate href
 
 
 	For xxx = 1 To 10 Step 1 ' but max of 4 or 5 should  be plenty
